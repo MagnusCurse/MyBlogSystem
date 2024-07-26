@@ -58,11 +58,23 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
 		</dependency>
-        <!--MybatisPlus 依赖-->
+        <!-- MybatisPlus -->
 		<dependency>
 			<groupId>com.baomidou</groupId>
 			<artifactId>mybatis-plus-boot-starter</artifactId>
 			<version>3.4.3</version>
+		</dependency>
+		<!-- JAX-WS API -->
+        <!-- Java 17 removed JAX-WS, so you'll need to re-add that dependency -->
+		<dependency>
+			<groupId>javax.xml.ws</groupId>
+			<artifactId>jaxws-api</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.ws</groupId>
+			<artifactId>jaxws-rt</artifactId>
+			<version>2.3.1</version>
 		</dependency>
 	</dependencies>
 	<build>
