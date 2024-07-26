@@ -34,7 +34,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh 'nohup java -jar '
+                // sh 'nohup java -jar /home/jenkins/workspace/MycnBlogPipeline/MyBlogSystem-III(Deployed)/target/MyBlogSys.jar >'
             }
         }
     }
