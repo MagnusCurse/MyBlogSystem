@@ -28,6 +28,7 @@ pipeline {
             steps {
                 // execute Maven unit tests
                 // sh 'mvn test'
+                echo 'test running'
             }
         }
     }
