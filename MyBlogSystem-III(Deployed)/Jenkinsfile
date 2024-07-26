@@ -19,7 +19,7 @@ pipeline {
                 sh 'which java'
                 sh 'java --version'
                 // dir indicates that the following command will temporarily switch to that directory.
-                dir("$(env.PROJECT_DIR") {
+                dir("${env.PROJECT_DIR}") {
                     sh 'mvn -B -DskipTests clean package'
                 }
             }
