@@ -28,8 +28,15 @@ pipeline {
             steps {
                 // execute Maven unit tests
                 // sh 'mvn test'
-                echo 'test running'
+                echo 'Testing....'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+                sh 'nohup java -jar '
             }
         }
     }
 }
+
