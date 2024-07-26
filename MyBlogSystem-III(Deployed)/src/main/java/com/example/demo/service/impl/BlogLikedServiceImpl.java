@@ -13,7 +13,6 @@ import com.example.demo.mapper.BlogLikedMapper;
 import com.example.demo.entity.BlogLike;
 import com.example.demo.utils.RedisKeyUtils;
 import com.example.demo.utils.SessionUnit;
-import org.omg.PortableInterceptor.INACTIVE;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
