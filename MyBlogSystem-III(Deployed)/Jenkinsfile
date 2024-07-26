@@ -7,21 +7,27 @@ pipeline {
        maven 'Maven3.9.8'
     }
 
+    // Since our pom.xml is not located in our default directory, we need to redefine a directory.
+    environment {
+       PROJECT_DIR = '/home/jenkins/workspace/MycnBlogPipeline/MyBlogSystem-III(Deployed)'
+    }
+
     stages {
         stage('Build') {
             steps {
                 sh 'env | grep -e PATH -e JAVA_HOME'
                 sh 'which java'
                 sh 'java --version'
-
-                sh 'mvn -B -DskipTests clean package'
+                // dir indicates that the following command will temporarily switch to that directory.
+                dir("$(env.PROJECT_DIR") {
+                    sh 'mvn -B -DskipTests clean package'
+                }
             }
         }
         stage('Test') {
             steps {
                 // execute Maven unit tests
                 // sh 'mvn test'
-                echo 'maven test run'
             }
         }
     }
