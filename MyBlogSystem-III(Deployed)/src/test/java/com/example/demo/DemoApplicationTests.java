@@ -1,11 +1,8 @@
 package com.example.demo;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.util.DigestUtils;
 
-import java.time.Duration;
-import java.time.Instant;
+import org.springframework.boot.test.context.SpringBootTest;
+
 
 @SpringBootTest
 class DemoApplicationTests {
