@@ -1,6 +1,14 @@
 server:
   port: 9090
 spring:
+  rabbitmq:
+    listener:
+      simple:
+        acknowledge-mode: auto
+    host: "43.128.251.4"
+    port: 5672
+    username: "admin"
+    password: "admin"
   datasource:
     url: jdbc:mysql://localhost:3306/mycnblog?characterEncoding=utf8&useSSL=false
     username: root
